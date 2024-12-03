@@ -37,7 +37,8 @@
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
 Last Updated on \today
-\end{textblock}}
+  \end{textblock}
+}
 
 % Name command
 \newcommand{\namesection}[3]{
@@ -49,7 +50,7 @@ Last Updated on \today
 \centering{
 \color{headings}
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.5pt}}
+\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
 }
 
@@ -57,11 +58,11 @@ Last Updated on \today
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{18pt}}
+\newcommand{\sectionsep}{\vspace{14pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{24pt}{30pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
@@ -72,7 +73,7 @@ Last Updated on \today
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{13pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
