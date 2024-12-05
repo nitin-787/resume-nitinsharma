@@ -30,13 +30,11 @@
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
 % Date command
-\usepackage[absolute]{textpos}
-\usepackage[UKenglish]{isodate}
-\setlength{\TPHorizModule}{1mm}
-\setlength{\TPVertModule}{1mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on \today
+\newcommand{\lastupdated}{
+  \usepackage[UKenglish]{datetime2}
+  \begin{textblock}{60}(165,0)
+  \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
+  Last Updated on \today
   \end{textblock}
 }
 
