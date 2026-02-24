@@ -1,0 +1,143 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+
+%----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Nitin Sharma} \\ \vspace{1pt}
+    \small +91 73411-59671 $|$ \href{mailto:nitinsharma.devx@gmail.com}{\underline{nitinsharma.devx@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/nitin787/}{\underline{linkedin.com/in/nitin787}} $|$
+    \href{https://github.com/nitin-787}{\underline{github.com/nitin-787}}
+\end{center}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google Summer of Code '22 @CCExtractor}{June 2022 -- Oct. 2022}
+      {Open Source Contributor $|$ \href{https://github.com/MarkisDev/its_urgent/graphs/contributors}{\footnotesize \faGithub \hspace{0.1mm} Codebase}}{Remote}
+      \resumeItemListStart
+        \resumeItem{Optimized \textbf{CI/CD pipelines} for high-frequency deployment, achieving a \textbf{30\% reduction} in build failures and increasing pipeline reliability for \textbf{1,000+ automated builds}.}
+        \resumeItem{Authored \textbf{16+ production-ready commits} to a codebase serving global users, prioritizing modular architecture and reducing technical debt by \textbf{15\%} through rigorous documentation.}
+        \resumeItem{Conducted deep-dive root cause analysis on integration bottlenecks, decreasing manual debugging time by \textbf{20\%} for the core development team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Geeks for Geeks}{April 2023 -- Sept. 2023}
+      {Technical Content Writer $|$ \href{https://www.geeksforgeeks.org/user/nitinsharma29/contributions/?type=articles}{\footnotesize \faLink \hspace{0.1mm} Published Articles}}{Remote}
+      \resumeItemListStart
+        \resumeItem{Published high-traffic technical documentation on \textbf{Docker and AWS}, generating \textbf{10,000+ organic views} and maintaining a \textbf{4.5/5 reader rating}.}
+        \resumeItem{Educated a community of \textbf{5,000+ unique monthly readers} on cloud infrastructure, resulting in a measurable increase in technical literacy and site engagement metrics.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hacktoberfest '22}{Oct. 2022 -- Oct. 2022}
+      {Project Maintainer $|$ \href{https://github.com/nitin-787/uni-notes/graphs/contributors}{\footnotesize \faGithub \hspace{0.1mm} Contributors}}{Remote}
+      \resumeItemListStart
+        \resumeItem{Directly \textbf{mentored 15+ developers} on Git-based workflows, facilitating the successful merge of \textbf{20+ pull requests} with a \textbf{zero-regression rate}.}
+        \resumeItem{Automated the open-source contribution lifecycle, scaling the project to support \textbf{5+ major feature releases} within a \textbf{30-day sprint}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Uni-Share} $|$ \emph{Flutter, Firebase, Dart} $|$ \href{https://github.com/nitin-787/uni-notes/}{\footnotesize \faGithub \hspace{0.1mm} Repository}}{July 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Architected an open-source academic ecosystem with \textbf{40+ forks} and \textbf{39 stars}, supporting a data-sharing pipeline for a potential user base of \textbf{1,000+} students.}
+            \resumeItem{Engineered a real-time notification engine via \textbf{Firebase Cloud Messaging (FCM)}, maintaining \textbf{<200ms synchronization latency} across 100+ concurrent user sessions.}
+            \resumeItem{Reduced manual deployment overhead by \textbf{80\%} through the implementation of \textbf{GitHub Actions}, ensuring 100\% passing test suites before every version release.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Ayumi GPT} $|$ \emph{Flutter, OpenAI API, Provider} $|$ \href{https://github.com/nitin-787/Ayumi-gpt}{\footnotesize \faGithub \hspace{0.1mm} Repository}}{Jan 2023 -- Mar 2023}
+          \resumeItemListStart
+            \resumeItem{Developed an AI-integrated mobile client leveraging \textbf{OpenAI’s GPT models}, achieving \textbf{98\% uptime} for conversational interactions via robust error-handling logic.}
+            \resumeItem{Improved user retention by \textbf{25\%} through the implementation of local-first persistence (Hive/SharedPrefs) and personalized context-aware history management.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Go (Golang), Dart, TypeScript, SQL, HTML/CSS} \\
+     \textbf{Frameworks/Mobile}{: Flutter, React, Node.js, Express.js, Provider, BLoC} \\
+     \textbf{Cloud \& DevOps}{: AWS (EC2, S3), Firebase, Docker, GitHub Actions, CI/CD, Git} \\
+     \textbf{Developer Tools}{: Postman, VS Code, GitHub, Figma, LaTeX, Linux/Bash} \\
+     \textbf{Relevant Coursework}{: Data Structures \& Algorithms, DBMS, Operating Systems, Computer Networks}
+    }}
+ \end{itemize}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {I.K.G Punjab Technical University}{2022 -- 2026}
+      {Bachelor of Technology in Computer Science and Engineering}{Punjab, India}
+    \resumeSubheading
+      {Lovely Professional University}{2020 -- 2023}
+      {Diploma in Computer Science and Engineering (7.84/10 CGPA)}{Punjab, India}
+  \resumeSubHeadingListEnd
+
+\end{document}
